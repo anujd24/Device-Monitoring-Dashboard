@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import type { DeviceTypes } from '../types/types';
+import './Device.css'
 
 interface DeviceProps {
   device: DeviceTypes;

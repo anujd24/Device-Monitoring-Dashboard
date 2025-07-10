@@ -1,12 +1,13 @@
 import { useState } from "react";
 import Device from "../components/Device";
-import Pagination from "../components/Pagination"
+import Pagination from "../components/Pagination";
+import './Dashboard.css'
 
 const Dashboard = () =>{
     const [currentPage, setCurrentPage] = useState(1);
     const devices = 8; // this is for devices per page
 
-    // Mock data (replace with API fetch)
+    // Mock data 
   const device = Array(20).fill(1).map((_, i) => ({
     id: i + 1,
     name: `Device ${i + 1}`,
